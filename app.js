@@ -3,7 +3,11 @@ import express from "express";
 import router from "./routes/rutas.js";
 
 
+
+
 console.log("Arrancando proyecto");
+
+
 //console.log(supabase);
 const app=express();
 app.set('view engine', 'pug');
