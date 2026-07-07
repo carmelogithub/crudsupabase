@@ -26,3 +26,27 @@ export const nuevoFormulario=async (req,res)=>{
     res.render('nuevo', { title: 'Hey', message: 'Hello there!' });
 }
 
+export const actualizarFormulario=async (req,res)=>{
+    res.render('actualizar');
+}
+
+export const  updateProduct= async (req, res) =>{
+    console.log("Actualizar producto");
+    /* const {nombre,unidades,precio}=req.body;
+    if(!nombre){
+        res.send("El nombre es obligatorio");
+    }
+    const insertar=await supabase.from('productos').insert({
+      "nombre": nombre,
+      "unidades": Number(unidades),
+      "precio": Number(precio)
+    });
+    res.redirect("/"); */
+}
+
+export const eliminarFormulario=async (req,res)=>{
+    res.render('eliminar');
+}
+export const  deleteProduct= async (req, res) =>{
+    console.log("Eliminar producto");
+}

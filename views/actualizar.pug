@@ -1,0 +1,22 @@
+html
+  head
+    title Actualizar producto
+  body
+    h1 Vamos a actualizar el producto
+    form(action="/updateProduct" method="post")
+      label(for="id") Dime qué id de producto vas a actualizar:
+      input#id(type="number" name="id")
+      br
+
+      label(for="nombre") Nombre nuevo:
+      input#nombre(type="text" name="nombre" class="form-control")
+      br
+      
+      label(for="unidades") Unidades nuevas:
+      input#unidades(type="number" name="unidades")
+      br
+
+      label(for="precio") Precio nuevo:
+      input#precio(type="number" name="precio" step="0.01")
+      br
+      button(type="submit") Proceder a la actualización
