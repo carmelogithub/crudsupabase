@@ -1,0 +1,25 @@
+html
+  head
+    title= title
+    style
+        include estilo.css 
+  body
+    h1= "listado de productos"
+    a(href='/nuevo') añadir producto
+    h2= message
+    h3= productos
+    ul
+        each producto in productos.data
+            li= producto.nombre
+    p= "fin de productos"
+    table(border="1")
+        tr
+            th Nombre 
+            th Unidades 
+            th Precio
+        each producto in productos.data
+            tr
+                td=producto.nombre 
+                td=producto.unidades 
+                td=producto.precio
+                
