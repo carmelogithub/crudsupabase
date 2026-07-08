@@ -14,4 +14,5 @@ router.post("/updateProduct",updateProduct);
 router.get("/eliminar",eliminarFormulario);
 router.post("/deleteProduct",deleteProduct);
 
+
 export default router;

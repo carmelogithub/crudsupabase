@@ -2,10 +2,7 @@
 import express from "express";
 import router from "./routes/rutas.js";
 
-
-
-
-console.log("Arrancando proyecto");
+console.log("Arrancando proyecto sesión 3");
 
 
 //console.log(supabase);
